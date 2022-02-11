@@ -35,7 +35,6 @@
   display: flex;
   justify-content: center;
   bottom: 2rem;
-  z-index: 1;
 }
 
 .manual-btn {
@@ -76,7 +75,6 @@
   display: flex;
   justify-content: center;
   bottom: 2rem;
-  z-index: 1;
 }
 
 .navigation-auto div {
