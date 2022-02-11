@@ -1,0 +1,148 @@
+/* ############################################# Slider-Css ################################# */
+
+.slider {
+  width: 100%;
+  height: 25vw;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.slides {
+  width: 500%;
+  height: 25vw;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 25vw;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 2rem;
+}
+
+.manual-btn {
+  border: 2px solid var(--theme-color);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 3vw;
+}
+
+.manual-btn:hover {
+  background-color: var(--theme-color);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 2rem;
+}
+
+.navigation-auto div {
+  border: 2px solid var(--theme-color);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 3vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: var(--theme-color);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: var(--theme-color);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: var(--theme-color);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: var(--theme-color);
+}
+
+/* ############################################## Featured-category-text #################### */
+
+.featured-head {
+  width: 100%;
+  height: 15rem;
+  color: var(--dark-text-color);
+}
+
+.thick-bar {
+  width: 20%;
+  border-bottom: 3px solid var(--theme-color);
+}
+
+@media only screen and (max-width: 500px) {
+  .slider {
+    height: 70vw;
+  }
+
+  .slides {
+    height: 70vw;
+  }
+
+  .slide img {
+    height: 70vw;
+  }
+  .manual-btn:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  .navigation-auto div:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  .featured-head {
+    font-size: 2.5rem;
+  }
+
+  .thick-bar {
+    width: 40%;
+  }
+}

@@ -103,6 +103,22 @@ button {
   border: 2px solid var(--light-dark-color);
 }
 
+.z-ind-neg {
+  z-index: -1;
+}
+
+.z-ind-1 {
+  z-index: 1;
+}
+
+.z-ind-2 {
+  z-index: 2;
+}
+
+.z-ind-3 {
+  z-index: 3;
+}
+
 /* ################################ Text and headings ############################# */
 
 .f-h {
