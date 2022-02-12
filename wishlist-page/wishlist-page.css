@@ -2,6 +2,21 @@
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
+.responsive-grid .img-container {
+  height: 15rem;
+}
+
+.responsive-grid .img-container img {
+  object-fit: contain;
+}
+
+.card-btn .second-btn {
+  width: 100%;
+  border: 1px solid var(--theme-color);
+  height: 3rem;
+  border-radius: 10px;
+}
+
 .responsive-grid .card:hover {
   cursor: pointer;
   box-shadow: 5px 5px 10px 5px var(--dark-secondary-color);
