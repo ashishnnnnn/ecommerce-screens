@@ -170,6 +170,10 @@ button {
   padding: 2px;
 }
 
+.pad-0-5 {
+  padding: 0.5rem;
+}
+
 .pad-0-8 {
   padding: 0.8rem;
 }
