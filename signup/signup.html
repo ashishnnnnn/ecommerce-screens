@@ -9,13 +9,14 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="../base.css" />
     <link
       rel="stylesheet"
       href="https://pinakin-ui.netlify.app/data/style.css"
     />
-    <link rel="stylesheet" href="header.css" />
-    <title>Header</title>
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="../header/header.css" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Sign Page</title>
   </head>
   <body>
     <div class="navigation-bar z-ind-2">
@@ -64,6 +65,50 @@
       </ul>
     </div>
     <div class="margin-req"></div>
-    <script src="header.js"></script>
+    <div class="flex-center-column login-body">
+      <div class="login-form flex-column gap-1 pad-1 fnt-1-2">
+        <div class="fnt-1-5 flex-center-row fnt-w-600 mar-b-1">SignUp</div>
+        <div class="email-container">
+          <div class="fnt-1-2">Email address</div>
+          <input
+            class="input pad-0-8 fnt-1-2"
+            type="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="password-conatiner">
+          <div class="fnt-1-2">Password</div>
+          <input
+            class="input pad-0-8 fnt-1-2"
+            type="password"
+            placeholder="Enter Your Password"
+          />
+        </div>
+        <div class="password-conatiner">
+          <div class="fnt-1-2">Confirm Password</div>
+          <input
+            class="input pad-0-8 fnt-1-2"
+            type="password"
+            placeholder="Enter Your Password"
+          />
+        </div>
+        <div class="flex jst-sp-sb">
+          <label
+            class="custom-checkbox flex gap-0-5 ali-ce"
+            tab-index="0"
+            aria-label="Checkbox Label"
+          >
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label">I Accept Terms And Condition</span>
+          </label>
+        </div>
+        <a class="btn btn-primary flex-center-row text-align pad-0-8 fnt-1-2"
+          >SignUp</a
+        >
+        <a class="flex-center-row fnt-w-500">Already Have An Account</a>
+      </div>
+    </div>
+    <script src="../header/header.js"></script>
   </body>
 </html>
