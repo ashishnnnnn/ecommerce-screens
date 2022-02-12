@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f8241a6d57.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../base.css" />
+    <link
+      rel="stylesheet"
+      href="https://pinakin-ui.netlify.app/data/style.css"
+    />
+    <link rel="stylesheet" href="../header/header.css" />
+    <link rel="stylesheet" href="listing-page.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="navigation-bar z-ind-2">
+      <a class="hemburgur" href="#"><i class="fas fa-bars"></i></a>
+      <div class="side-hidden-bar hidden z-ind-3">
+        <div class="user-info pad-2 flex-align jst-sp-sb">
+          <img
+            class="avatar avatar-md"
+            src="../data/avatar/ashish.jpg"
+            alt=""
+          />
+          <a class="cross"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="side-hidder-info pad-t-1 pad-l-1">
+          <a class="btn btn-primary">Login</a>
+        </div>
+      </div>
+      <a href="#" class="nav-title">
+        <div class="logo flex-center-column">
+          <span class="fnt-2 fnt-w-600 theme-color">Music</span>
+          <span class="fnt-0-8 fnt-w-900">Mart</span>
+        </div>
+      </a>
+      <ul>
+        <li>
+          <div class="flex-align search-bar pad-1">
+            <a class="search-icon"><i class="fa fa-search"></i></a>
+            <input class="fnt-1-2 search-input" />
+          </div>
+        </li>
+        <li class="wishlist-btn">
+          <div class="badge badge-icon">
+            <i class="fas fa-heart"></i>
+            <p>5</p>
+          </div>
+        </li>
+        <li class="cart-btn">
+          <div class="badge badge-icon">
+            <i class="fas fa-cart-plus"></i>
+            <p>2</p>
+          </div>
+        </li>
+        <li class="login-btn">
+          <a class="btn btn-primary">Login</a>
+        </li>
+      </ul>
+    </div>
+    <div class="margin-req"></div>
+    <div class="main-body">
+      <div class="column side-bar pad-1-5 pad-t-3 pad-b-5">
+        <div class="flex jst-sp-sb ali-ce">
+          <p class="fnt-1-2 fnt-w-800">Filters</p>
+          <a class="clear-filter">
+            <p>Clear All</p>
+            <div class="very-thin-bor hundred-w"></div>
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="flex-center-column ali-st gap-1">
+          <p class="fnt-1 fnt-w-600">Price</p>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="40"
+            step="10"
+            class="slider"
+          />
+        </div>
+        <div class="spacer"></div>
+        <div class="flex-center-column ali-st gap-0-8">
+          <div class="fnt-1 fnt-w-600">Category</div>
+          <label
+            class="custom-checkbox flex-center-row gap-0-8"
+            tab-index="0"
+            aria-label="Checkbox Label"
+          >
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label fnt-1-2">Guitar</span>
+          </label>
+
+          <label
+            class="custom-checkbox flex-center-row gap-0-8"
+            tab-index="0"
+            aria-label="Another Label"
+          >
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label fnt-1-2">Drum</span>
+          </label>
+
+          <label
+            class="custom-checkbox flex-center-row gap-0-8"
+            tab-index="0"
+            aria-label="Checkbox Label"
+          >
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label fnt-1-2">Traditionals</span>
+          </label>
+
+          <label
+            class="custom-checkbox flex-center-row gap-0-8"
+            tab-index="0"
+            aria-label="Checkbox Label"
+          >
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label fnt-1-2">Studio-Equipments</span>
+          </label>
+        </div>
+        <div class="spacer"></div>
+        <div class="flex-center-column ali-st gap-0-8">
+          <div class="fnt-1 fnt-w-600">Ratings</div>
+          <label class="radio flex-center-row gap-0-5">
+            <input
+              type="radio"
+              name="ratings"
+              id="my_radio"
+              class="radio__input"
+            />
+            <div class="radio__radio pad-2px"></div>
+            4 Stars & Above
+          </label>
+          <label class="radio flex-center-row gap-0-5">
+            <input
+              type="radio"
+              name="ratings"
+              id="my_radio"
+              class="radio__input"
+            />
+            <div class="radio__radio pad-2px"></div>
+            3 Stars & Above
+          </label>
+          <label class="radio flex-center-row gap-0-5">
+            <input
+              type="radio"
+              name="ratings"
+              id="my_radio"
+              class="radio__input"
+            />
+            <div class="radio__radio pad-2px"></div>
+            2 Stars & Above
+          </label>
+          <label class="radio flex-center-row gap-0-5">
+            <input
+              type="radio"
+              name="ratings"
+              id="my_radio"
+              class="radio__input"
+            />
+            <div class="radio__radio pad-2px"></div>
+            1 Stars & Above
+          </label>
+        </div>
+        <div class="spacer"></div>
+        <div class="flex-center-column ali-st gap-0-8">
+          <div class="fnt-1 fnt-w-600">Sort-By</div>
+          <label class="radio flex-center-row gap-0-5">
+            <input
+              type="radio"
+              name="sort-by"
+              id="my_radio"
+              class="radio__input"
+            />
+            <div class="radio__radio pad-2px"></div>
+            Low to High
+          </label>
+          <label class="radio flex-center-row gap-0-5">
+            <input
+              type="radio"
+              name="sort-by"
+              id="my_radio"
+              class="radio__input"
+            />
+            <div class="radio__radio pad-2px"></div>
+            High to Low
+          </label>
+        </div>
+      </div>
+      <div class="column main-content pad-3">
+        <div class="responsive-grid">
+          <div class="card vertical-card">
+            <div class="img-container">
+              <img
+                src="https://www.johnsmusic.in/uploads/johns-music/products/aag41-240923_m.jpg"
+                alt="guitar-image"
+              />
+            </div>
+            <div class="hero-container">
+              <div class="hero">
+                <div class="title">
+                  Havana AAG41 41-Inch Cutaway Electro Acoustic Guitar
+                </div>
+
+                <div class="price-container">
+                  <div class="discount-price">Rs.5800</div>
+                  <div class="main-price">Rs.7999</div>
+                </div>
+              </div>
+              <a class="wishlist">
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+            <a class="cart-add-btn">Add to Cart</a>
+          </div>
+          <div class="card vertical-card">
+            <div class="img-container">
+              <img
+                src="https://www.johnsmusic.in/uploads/johns-music/products/c40m-472481_m.jpg"
+                alt="guitar-image"
+              />
+            </div>
+            <div class="hero-container">
+              <div class="hero">
+                <div class="title">
+                  Yamaha F280 Acoustic Guitar with 10 mm Padded Bag and Picks
+                </div>
+
+                <div class="price-container">
+                  <div class="discount-price">Rs.7500</div>
+                  <div class="main-price">Rs.10000</div>
+                </div>
+              </div>
+              <a class="wishlist">
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+            <a class="cart-add-btn">Add to Cart</a>
+          </div>
+          <div class="card vertical-card">
+            <div class="img-container">
+              <img
+                src="https://www.johnsmusic.in/uploads/johns-music/products/ibanez-md39c-634955_m.jpg"
+                alt="guitar-image"
+              />
+            </div>
+            <div class="hero-container">
+              <div class="hero">
+                <div class="title">
+                  Ibanez MD39C 39 inch Cutaway Acoustic Guitar
+                </div>
+
+                <div class="price-container">
+                  <div class="discount-price">Rs.5800</div>
+                  <div class="main-price">Rs.7999</div>
+                </div>
+              </div>
+              <a class="wishlist">
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+            <a class="cart-add-btn">Add to Cart</a>
+          </div>
+          <div class="card vertical-card">
+            <div class="img-container">
+              <img
+                src="https://www.johnsmusic.in/uploads/johns-music/products/bk-439569_m.jpg"
+                alt="guitar-image"
+              />
+            </div>
+            <div class="hero-container">
+              <div class="hero">
+                <div class="title">
+                  Mantic MG370c Acoustic Guitar - Concert Size
+                </div>
+
+                <div class="price-container">
+                  <div class="discount-price">Rs.5800</div>
+                  <div class="main-price">Rs.7999</div>
+                </div>
+              </div>
+              <a class="wishlist">
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+            <a class="cart-add-btn">Add to Cart</a>
+          </div>
+          <div class="card vertical-card">
+            <div class="img-container">
+              <img
+                src="https://www.johnsmusic.in/uploads/johns-music/products/bg2-685122_m.jpg"
+                alt="guitar-image"
+              />
+            </div>
+            <div class="hero-container">
+              <div class="hero">
+                <div class="title">
+                  Ortega RST5 Student Series 6 String Classical Guitar - Walnut
+                </div>
+
+                <div class="price-container">
+                  <div class="discount-price">Rs.5800</div>
+                  <div class="main-price">Rs.7999</div>
+                </div>
+              </div>
+              <a class="wishlist">
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+            <a class="cart-add-btn">Add to Cart</a>
+          </div>
+          <div class="card vertical-card">
+            <div class="img-container">
+              <img
+                src="https://www.johnsmusic.in/uploads/johns-music/products/builders-edition-912ce-whb1-266802_m.jpg"
+                alt="guitar-image"
+              />
+            </div>
+            <div class="hero-container">
+              <div class="hero">
+                <div class="title">
+                  Taylor Builder's Edition V-Class 912ce Grand Concert Acoustic
+                </div>
+
+                <div class="price-container">
+                  <div class="discount-price">Rs.5800</div>
+                  <div class="main-price">Rs.7999</div>
+                </div>
+              </div>
+              <a class="wishlist">
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+            <a class="cart-add-btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-code">
+        <div class="filters z-ind-1 flex">
+          <a class="ele flex-center-row sort fnt-1-2 pad-1">Sort</a>
+          <div class="divider"></div>
+          <a class="ele flex-center-row cate-filter fnt-1-2 pad-1">Filter</a>
+        </div>
+        <div class="sort-options pad-2 flex-column hidden z-ind-3">
+          <div class="flex jst-sp-sb pad-1">
+            <div class="fnt-1-2">Sort By</div>
+            <a><i class="fnt-1-2 fas fa-times"></i></a>
+          </div>
+          <div class="hr-line"></div>
+          <a class="click fnt-1-2 pad-1">Low To High</a>
+          <a class="click fnt-1-2 pad-1">High Low</a>
+        </div>
+        <div class="filter-options pad-2 flex-column hidden">
+          <div class="flex jst-sp-sb ali-ce">
+            <p class="fnt-1-2 fnt-w-800">Filters</p>
+            <a class="clear-filter">
+              <p>Clear All</p>
+              <div class="very-thin-bor hundred-w"></div>
+            </a>
+          </div>
+          <div class="spacer"></div>
+          <div class="flex-center-column ali-st gap-0-8">
+            <div class="fnt-1 fnt-w-600">Category</div>
+            <label
+              class="custom-checkbox flex-center-row gap-0-8"
+              tab-index="0"
+              aria-label="Checkbox Label"
+            >
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              <span class="label fnt-1-2">Guitar</span>
+            </label>
+
+            <label
+              class="custom-checkbox flex-center-row gap-0-8"
+              tab-index="0"
+              aria-label="Another Label"
+            >
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              <span class="label fnt-1-2">Drum</span>
+            </label>
+
+            <label
+              class="custom-checkbox flex-center-row gap-0-8"
+              tab-index="0"
+              aria-label="Checkbox Label"
+            >
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              <span class="label fnt-1-2">Traditionals</span>
+            </label>
+
+            <label
+              class="custom-checkbox flex-center-row gap-0-8"
+              tab-index="0"
+              aria-label="Checkbox Label"
+            >
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              <span class="label fnt-1-2">Studio-Equipments</span>
+            </label>
+          </div>
+          <div class="spacer"></div>
+          <div class="flex-center-column ali-st gap-0-8">
+            <div class="fnt-1 fnt-w-600">Ratings</div>
+            <label class="radio flex-center-row gap-0-5">
+              <input
+                type="radio"
+                name="ratings"
+                id="my_radio"
+                class="radio__input"
+              />
+              <div class="radio__radio pad-2px"></div>
+              4 Stars & Above
+            </label>
+            <label class="radio flex-center-row gap-0-5">
+              <input
+                type="radio"
+                name="ratings"
+                id="my_radio"
+                class="radio__input"
+              />
+              <div class="radio__radio pad-2px"></div>
+              3 Stars & Above
+            </label>
+            <label class="radio flex-center-row gap-0-5">
+              <input
+                type="radio"
+                name="ratings"
+                id="my_radio"
+                class="radio__input"
+              />
+              <div class="radio__radio pad-2px"></div>
+              2 Stars & Above
+            </label>
+            <label class="radio flex-center-row gap-0-5">
+              <input
+                type="radio"
+                name="ratings"
+                id="my_radio"
+                class="radio__input"
+              />
+              <div class="radio__radio pad-2px"></div>
+              1 Stars & Above
+            </label>
+          </div>
+          <div class="spacer"></div>
+          <a class="apply flex-center-column fnt-1-5 pad-tb-1">Apply</a>
+        </div>
+      </div>
+    </div>
+    <script src="../header/header.js"></script>
+    <script src="listing-page.js"></script>
+  </body>
+</html>

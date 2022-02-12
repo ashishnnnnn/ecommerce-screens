@@ -37,6 +37,7 @@
   width: 80%;
   transition: all 0.3s ease;
   color: var(--text-color);
+  box-shadow: 5px 0 5px -2px var(--dark-dark-color);
 }
 
 .navigation-bar .side-hidden-bar.hidden {
