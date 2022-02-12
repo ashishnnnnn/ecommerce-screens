@@ -23,6 +23,10 @@
   scroll-behavior: smooth;
 }
 
+.text-align {
+  text-align: center;
+}
+
 .bg-lighest-th-colour {
   background-color: #bb453046;
 }
